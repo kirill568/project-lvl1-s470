@@ -1,2 +1,1 @@
-установка пакеты глобально - composer global require kirill568/brain-games:dev-master
-вызов brain-games - bin/brain-games
+[![asciicast](https://asciinema.org/a/Nb5wr91ZdMQO9Ban4FsJxFGhZ.svg)](https://asciinema.org/a/Nb5wr91ZdMQO9Ban4FsJxFGhZ)
