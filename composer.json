@@ -1,0 +1,10 @@
+{
+    "name": "kirill/brain-games",
+    "authors": [
+        {
+            "name": "kirill",
+            "email": "kirillbalaev568@gmail.com"
+        }
+    ],
+    "require": {}
+}
