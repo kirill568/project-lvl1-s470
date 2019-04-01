@@ -15,7 +15,7 @@
             "src/Cli.php"
         ]
     },
-    "require-dev": {
+    "require": {
         "wp-cli/php-cli-tools": "dev-master"
     }
 }
