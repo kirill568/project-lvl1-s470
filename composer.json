@@ -1,11 +1,12 @@
 {
-    "name": "kirill/brain-games",
+    "name": "kirill568/brain-games",
     "authors": [
         {
             "name": "kirill",
             "email": "kirillbalaev568@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "bin": [
         "bin/brain-games"
     ],
