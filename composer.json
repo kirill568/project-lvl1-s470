@@ -6,5 +6,8 @@
             "email": "kirillbalaev568@gmail.com"
         }
     ],
+    "bin": [
+        "bin/brain-games"
+    ],
     "require": {}
 }
