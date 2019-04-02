@@ -16,7 +16,7 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/parityCheck.php"
+            "src/brain-even.php"
         ]
     },
     "scripts": {
