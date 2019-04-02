@@ -1,6 +1,6 @@
 {
     "name": "kirill568/brain-games",
-    "type": "library",
+    "type": "project",
     "description": "set mini-game",
     "keywords": ["packagist", "porjects", "keywords"],
     "authors": [
@@ -9,7 +9,6 @@
             "email": "kirillbalaev568@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "bin": [
         "bin/brain-games"
     ],
@@ -25,7 +24,6 @@
         "wp-cli/php-cli-tools": "*"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.0@dev"
+        "squizlabs/php_codesniffer": "^3.0"
     }
-
 }
