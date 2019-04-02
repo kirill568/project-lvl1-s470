@@ -1,1 +1,1 @@
-[![asciicast](https://asciinema.org/a/KRu5KoX0uzFoWvh3pXlTrUwe3.svg)](https://asciinema.org/a/KRu5KoX0uzFoWvh3pXlTrUwe3)
+[![asciicast](https://asciinema.org/a/7j0qc8n0fI5WZJCnwmnEqnSZ7.svg)](https://asciinema.org/a/7j0qc8n0fI5WZJCnwmnEqnSZ7)
