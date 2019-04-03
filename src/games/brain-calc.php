@@ -43,7 +43,6 @@ function runGame()
         $answer = $result;
         $question = "{$firstNumber} {$symbol} {$secondNumber}";
         $questionsAnswers[] = [$question, "{$answer}"];
-
     }
     engine($questionsAnswers, DESCRIPTION);
 }
