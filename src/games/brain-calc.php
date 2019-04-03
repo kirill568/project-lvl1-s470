@@ -3,33 +3,47 @@
 namespace BrainGames\brainCalc;
 
 use function BrainGames\flow\engine;
+use const BrainGames\flow\QUESTIONS_NUMBER;
 
-function getOperationAndResult($firstNumber, $secondNumber)
+const DESCRIPTION = 'What is the result of the expression?';
+
+const SYMBOLS = ['+', '-', '*'];
+
+function getOperation()
 {
-    $operations = [
-    ['+' => $firstNumber + $secondNumber],
-    ['-' => $firstNumber - $secondNumber],
-    ['*' => $firstNumber * $secondNumber]
-    ];
-    $operation = rand(0, 2);
-    return $operations[$operation];
+    $operation = rand(0, sizeof(SYMBOLS) - 1);
+    return SYMBOLS[$operation];
+}
+
+function getResult($firstNumber, $secondNumber, $symbol)
+{
+    switch ($symbol) {
+        case '+':
+            return $firstNumber + $secondNumber;
+            break;
+        
+        case '-':
+            return $firstNumber - $secondNumber;
+            break;
+        case '*':
+            return $firstNumber * $secondNumber;
+            break;
+    }
 }
 
 function runGame()
 {
-    $questions = [];
-    $answers = [];
-    $rule = 'What is the result of the expression?';
-    $questionsNumber = 3;
-    for ($i = 1; $i <= $questionsNumber; $i += 1) {
+    $questionsAnswers = [];
+    for ($i = 1; $i <= QUESTIONS_NUMBER; $i += 1) {
         $firstNumber = rand(1, 30);
         $secondNumber = rand(1, 30);
-        $operationAndResult = getOperationAndResult($firstNumber, $secondNumber);
-        $operation = key($operationAndResult);
-        $answer = $operationAndResult[$operation];
-        $question = "{$firstNumber} {$operation} {$secondNumber}";
-        $questions[] = $question;
-        $answers[] = "{$answer}";
+        $operation = getOperation($firstNumber, $secondNumber);
+        $symbol = getOperation();
+        $result = getResult($firstNumber, $secondNumber, $symbol);
+        $answer = $result;
+        $question = "{$firstNumber} {$symbol} {$secondNumber}";
+        $questionsAnswers[] = [$question, "{$answer}"];
+
     }
-    engine($answers, $questions, $rule);
+    engine($questionsAnswers, DESCRIPTION);
 }
