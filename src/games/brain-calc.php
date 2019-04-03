@@ -37,7 +37,6 @@ function runGame()
     for ($i = 1; $i <= QUESTIONS_NUMBER; $i += 1) {
         $firstNumber = rand(1, 30);
         $secondNumber = rand(1, 30);
-        $operation = getOperation($firstNumber, $secondNumber);
         $symbol = getOperation();
         $result = getResult($firstNumber, $secondNumber, $symbol);
         $answer = $result;
