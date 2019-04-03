@@ -17,7 +17,7 @@ function runGame()
     $questions = [];
     $answers = [];
     $rule = 'Answer "yes" if number even otherwise answer "no".';
-    for ($i = 1; $i <= $questionsNumber; $i += 1) { 
+    for ($i = 1; $i <= $questionsNumber; $i += 1) {
         $question = rand(1, 30);
         $answer = isParity($question) ? 'yes' : 'no';
         $questions[] = $question;

@@ -4,15 +4,15 @@ namespace BrainGames\brainCalc;
 
 use function BrainGames\flow\engine;
 
-function getOperationAndResult ($firstNumber, $secondNumber)
+function getOperationAndResult($firstNumber, $secondNumber)
 {
-	$operations = [
-	['+' => $firstNumber + $secondNumber], 
-	['-' => $firstNumber - $secondNumber],
-	['*' => $firstNumber * $secondNumber]
-	];
-	$operation = rand(0, 2);
-	return $operations[$operation];
+    $operations = [
+    ['+' => $firstNumber + $secondNumber],
+    ['-' => $firstNumber - $secondNumber],
+    ['*' => $firstNumber * $secondNumber]
+    ];
+    $operation = rand(0, 2);
+    return $operations[$operation];
 }
 
 function runGame()
