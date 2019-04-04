@@ -2,8 +2,6 @@
 
 namespace BrainGames\brainEven;
 
-use function \cli\line;
-use function \cli\prompt;
 use function BrainGames\flow\engine;
 use const BrainGames\flow\QUESTIONS_NUMBER;
 

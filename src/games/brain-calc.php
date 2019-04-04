@@ -39,9 +39,9 @@ function runGame()
         $secondNumber = rand(1, 30);
         $symbol = getOperation();
         $result = getResult($firstNumber, $secondNumber, $symbol);
-        $answer = $result;
+        $answer = "{$result}";
         $question = "{$firstNumber} {$symbol} {$secondNumber}";
-        $questionsAnswers[] = [$question, "{$answer}"];
+        $questionsAnswers[] = [$question, $answer];
     }
     engine($questionsAnswers, DESCRIPTION);
 }
