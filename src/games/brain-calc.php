@@ -7,21 +7,20 @@ use const BrainGames\flow\QUESTIONS_NUMBER;
 
 const DESCRIPTION = 'What is the result of the expression?';
 
-const SYMBOLS = ['+', '-', '*'];
+const OPERATION = ['+', '-', '*'];
 
 function getOperation()
 {
-    $operation = rand(0, sizeof(SYMBOLS) - 1);
-    return SYMBOLS[$operation];
+    $operation = rand(0, sizeof(OPERATION) - 1);
+    return OPERATION[$operation];
 }
 
-function getResult($firstNumber, $secondNumber, $symbol)
+function getResult($firstNumber, $secondNumber, $operation)
 {
-    switch ($symbol) {
+    switch ($operation) {
         case '+':
             return $firstNumber + $secondNumber;
             break;
-        
         case '-':
             return $firstNumber - $secondNumber;
             break;
@@ -37,10 +36,10 @@ function runGame()
     for ($i = 1; $i <= QUESTIONS_NUMBER; $i += 1) {
         $firstNumber = rand(1, 30);
         $secondNumber = rand(1, 30);
-        $symbol = getOperation();
-        $result = getResult($firstNumber, $secondNumber, $symbol);
-        $answer = "{$result}";
-        $question = "{$firstNumber} {$symbol} {$secondNumber}";
+        $operation = getOperation();
+        $result = getResult($firstNumber, $secondNumber, $operation);
+        $answer = (string) $result;
+        $question = "$firstNumber $operation $secondNumber";
         $questionsAnswers[] = [$question, $answer];
     }
     engine($questionsAnswers, DESCRIPTION);

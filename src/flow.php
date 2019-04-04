@@ -14,8 +14,7 @@ function engine($questionsAnswers, $ruleGame)
     $name = prompt('May I have your name?');
     line("Hello , {$name}");
     for ($i = 0; $i < QUESTIONS_NUMBER; $i += 1) {
-        $currentAnswer = $questionsAnswers[$i][1];
-        $currentQuestion = $questionsAnswers[$i][0];
+        [$currentQuestion, $currentAnswer] = $questionsAnswers[$i];
         line("Question: {$currentQuestion}");
         $userAnswer = prompt("Your answer");
         if ($userAnswer === $currentAnswer) {
