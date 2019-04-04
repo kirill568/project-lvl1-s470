@@ -9,14 +9,7 @@ const DESCRIPTION = "Find the greatest common divisor of given numbers.";
 
 function getGcd($firstNumber, $secondNumber)
 {
-    while ($firstNumber !== 0 && $secondNumber !== 0) {
-        if ($firstNumber > $secondNumber) {
-            $firstNumber = $firstNumber % $secondNumber;
-        } else {
-            $secondNumber = $secondNumber % $firstNumber;
-        }
-    }
-    return $firstNumber + $secondNumber;
+    return $secondNumber ? getGcd($secondNumber, $firstNumber % $secondNumber) : $firstNumber;
 }
 
 function runGame()
