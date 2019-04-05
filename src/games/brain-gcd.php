@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\brainGcd;
+namespace BrainGames\gcd;
 
 use function BrainGames\flow\engine;
 use const BrainGames\flow\QUESTIONS_NUMBER;

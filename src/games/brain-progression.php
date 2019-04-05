@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\brainProgression;
+namespace BrainGames\progression;
 
 use function BrainGames\flow\engine;
 use const BrainGames\flow\QUESTIONS_NUMBER;
