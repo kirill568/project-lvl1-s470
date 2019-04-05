@@ -13,10 +13,8 @@ function makeProgression()
     $progression = [];
     $start = rand(1, 15);
     $step = rand(1, 6);
-    $member = $start;
-    while (sizeof($progression) < 10) {
-        $progression[] = $member;
-        $member += $step;
+    for ($i = 0; $i < LENGTH_PROGRESSION; $i += 1) {
+        $progression[] = $start + $step * $i;
     }
     return $progression;
 }
@@ -25,8 +23,14 @@ function setHiddenElem($progression)
 {
     $index = rand(0, sizeof($progression) - 1);
     $hiddenNumber = $progression[$index];
-    $progression[$index] = "..";
-    return [$hiddenNumber, $progression];
+    return $hiddenNumber;
+}
+
+function transformProgression($hiddenNumber, $progression)
+{
+    $index = array_search($hiddenNumber, $progression);
+    $progression[$index] = '..';
+    return $progression;
 }
 
 function runGame()
@@ -34,8 +38,9 @@ function runGame()
     $questionsAnswers = [];
     for ($i = 1; $i <= QUESTIONS_NUMBER; $i += 1) {
         $progression = makeProgression();
-        [$answer, $question] = setHiddenElem($progression);
-        $questionsAnswers[] = [implode(' ', $question), (string)$answer];
+        $hiddenElement = (string)setHiddenElem($progression);
+        $question = implode(' ', transformProgression($hiddenElement, $progression));
+        $questionsAnswers[] = [$question, $hiddenElement];
     }
     engine($questionsAnswers, DESCRIPTION);
 }
