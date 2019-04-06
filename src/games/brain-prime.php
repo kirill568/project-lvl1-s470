@@ -25,7 +25,7 @@ function runGame()
 {
     $questionsAnswers = [];
     for ($i = 1; $i <= QUESTIONS_NUMBER; $i += 1) {
-        $number = rand(2, 100);
+        $number = rand(-10, 100);
         $prime = isPrime($number) ? "yes" : "no";
         $quiestion = (string) $number;
         $questionsAnswers[] = [$quiestion, $prime];
