@@ -18,7 +18,7 @@
     <https://getcomposer.org/download/>\
     <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos>
 
-* Вам нужно узнать в какую дирректорию composer складывает ссылки на исполнемые файлы c помощью команды `composer global config bin-dir --absolute`. Путь, который мы получили нужно добавить в переменную окружения PATH вот так:
+* Вам нужно узнать в какую дирректорию composer складывает ссылки на исполняемые файлы c помощью команды `composer global config bin-dir --absolute`. Путь, который мы получили нужно добавить в переменную окружения PATH вот так:
     ```
     PATH=$PATH:путь
     export PATH

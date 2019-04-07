@@ -19,28 +19,16 @@ function makeProgression()
     return $progression;
 }
 
-function setHiddenElem($progression)
-{
-    $index = rand(0, sizeof($progression) - 1);
-    $hiddenNumber = $progression[$index];
-    return $hiddenNumber;
-}
-
-function transformProgression($hiddenNumber, $progression)
-{
-    $index = array_search($hiddenNumber, $progression);
-    $progression[$index] = '..';
-    return $progression;
-}
-
 function runGame()
 {
     $questionsAnswers = [];
     for ($i = 1; $i <= QUESTIONS_NUMBER; $i += 1) {
         $progression = makeProgression();
-        $hiddenElement = (string)setHiddenElem($progression);
-        $question = implode(' ', transformProgression($hiddenElement, $progression));
-        $questionsAnswers[] = [$question, $hiddenElement];
+        $hiddenElement = rand(0, LENGTH_PROGRESSION - 1);
+        $answer = (string) $progression[$hiddenElement];
+        $progression[$hiddenElement] = '..';
+        $question = implode(' ', $progression);
+        $questionsAnswers[] = [$question, $answer];
     }
     engine($questionsAnswers, DESCRIPTION);
 }

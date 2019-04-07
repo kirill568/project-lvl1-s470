@@ -19,8 +19,8 @@ function runGame()
         $firstNumber = rand(1, 30);
         $secondNumber = rand(1, 30);
         $gcd = getGcd($firstNumber, $secondNumber);
-        $question = "{$firstNumber} {$secondNumber}";
-        $answer = "{$gcd}";
+        $question = "$firstNumber $secondNumber";
+        $answer = (string) $gcd;
         $questionsAnswers[] = [$question, $answer];
     }
     engine($questionsAnswers, DESCRIPTION);

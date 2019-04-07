@@ -20,10 +20,10 @@ function engine($questionsAnswers, $ruleGame)
         if ($userAnswer === $currentAnswer) {
             line('Correct!');
         } else {
-            line("'{$userAnswer}' is now wrong answer ;(. Correct answer was '{$currentAnswer}'");
-            line("Let's try again, {$name}");
+            line("'$userAnswer' is now wrong answer ;(. Correct answer was '$currentAnswer'");
+            line("Let's try again, $name");
             return;
         }
     }
-    line("Congratulations, {$name}!");
+    line("Congratulations, $name!");
 }
