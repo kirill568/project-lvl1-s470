@@ -39,22 +39,22 @@
 
 + Игра: "Проверка на четность"
 
-    [![asciicast](https://asciinema.org/a/oyrXWq5R2f5aBDNHBbbZp0Cfq.svg)](https://asciinema.org/a/oyrXWq5R2f5aBDNHBbbZp0Cfq)
+    [![asciicast](https://asciinema.org/a/nxG6UETX5HC2RQsR2BdDQFg7z.svg)](https://asciinema.org/a/nxG6UETX5HC2RQsR2BdDQFg7z)
 
 + Игра: "Калькулятор"
 
-    [![asciicast](https://asciinema.org/a/BD1mWwbM4eSHcVpOtmgwePpOn.svg)](https://asciinema.org/a/BD1mWwbM4eSHcVpOtmgwePpOn)
+    [![asciicast](https://asciinema.org/a/KBH4VVE2Dq4fVsVZEmRD6Fo30.svg)](https://asciinema.org/a/KBH4VVE2Dq4fVsVZEmRD6Fo30)
 
 + Игра "НОД"
 
-   [![asciicast](https://asciinema.org/a/4QiiN5OVEj97F3HQtB10b8atk.svg)](https://asciinema.org/a/4QiiN5OVEj97F3HQtB10b8atk)
+   [![asciicast](https://asciinema.org/a/Lt3TLb0l3jSzpPRQYMuf5Eu2n.svg)](https://asciinema.org/a/Lt3TLb0l3jSzpPRQYMuf5Eu2n)
 
 + Игра "Арифметическая прогрессия"
 
-   [![asciicast](https://asciinema.org/a/UZLUfh1AV3Qc5qodjhSW9wJpo.svg)](https://asciinema.org/a/UZLUfh1AV3Qc5qodjhSW9wJpo)
+   [![asciicast](https://asciinema.org/a/qMkbIVeAcA2WpDCRvxHDOJ6Ci.svg)](https://asciinema.org/a/qMkbIVeAcA2WpDCRvxHDOJ6Ci)
 
 + Игра "Простое ли число?"
 
-   [![asciicast](https://asciinema.org/a/XDfE4JZulujaJJ9ZKvllCW5go.svg)](https://asciinema.org/a/XDfE4JZulujaJJ9ZKvllCW5go)
+   [![asciicast](https://asciinema.org/a/2rx8Sy1d2QWxRU5tjUx6pLKqV.svg)](https://asciinema.org/a/2rx8Sy1d2QWxRU5tjUx6pLKqV)
 
 &copy;Проект реализован в рамках учебной программы Hexlet.
